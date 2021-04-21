@@ -5,6 +5,18 @@
 
 body {
     font-family: 'RocknRoll One', sans-serif;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 10px;
+    grid-template-areas:    
+                'h'
+                'm'
+                'f';
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    grid-area: h;
 }
 
 h1 {
@@ -15,6 +27,25 @@ h1 {
 
 li {
     list-style-type: none;
+}
+
+main {
+    grid-area: m;
+}
+
+div.cart-row {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+div.cart-row span {
+    display: table-cell;
+    text-align: center;
+}
+
+footer {
+    grid-area: f;
 }
 
 
