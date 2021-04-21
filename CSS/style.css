@@ -6,7 +6,7 @@
 body {
     font-family: 'RocknRoll One', sans-serif;
     display: grid;
-    grid-template-rows: 0.5fr 1fr 10px;
+    grid-template-rows: 0.2fr 1fr 10px;
     grid-template-areas:    
                 'h'
                 'm'
@@ -44,6 +44,7 @@ div.cart-row span {
     text-align: center;
 }
 
+
 footer {
     grid-area: f;
 }
@@ -52,6 +53,15 @@ footer {
 /* Responsive - Desktop (min 640px) */ 
 
 @media screen and (min-width: 640px) {
+
+    .shop-items {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        width: 100vw;
+        height: 100vh;
+    }
+
 
     
 }

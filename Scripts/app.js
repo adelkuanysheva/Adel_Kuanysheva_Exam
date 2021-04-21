@@ -9,7 +9,7 @@ function updateImage() {
     index = 1
 
     for (item in itemsArray) {
-        let img = document.querySelector("shop-item-image")
+        let img = document.getElementsByClassName('shop-item-image')
         img.src = `Images/Album${index}.png`
         index++;
     }
@@ -34,4 +34,7 @@ shopItems.addEventListener('click', function(img) {
         <div></div>
         <div></div>
     </div>`
+
+    albums[inCart] = true;
 })
+
