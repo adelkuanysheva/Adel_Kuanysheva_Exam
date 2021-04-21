@@ -1,0 +1,26 @@
+* {
+    background-color: #9ccfd8;
+    text-align: center;
+}
+
+body {
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    background-color: #31748f;
+    color: #e0def4;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* Responsive - Desktop (min 640px) */ 
+
+@media screen and (min-width: 640px) {
+
+    
+}
