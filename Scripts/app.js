@@ -8,11 +8,10 @@ function updateImage() {
 
     index = 1
 
-    for (item in itemsArray) {
-        let img = document.getElementsByClassName('shop-item-image')
-        img.src = `Images/Album${index}.png`
+    document.querySelectorAll('.shop-item-image').forEach(element => {
+        element.src = `Images/Album${index}.png`
         index++;
-    }
+    })
 }
 
 updateImage()
