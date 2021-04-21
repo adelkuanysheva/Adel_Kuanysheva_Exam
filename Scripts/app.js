@@ -25,7 +25,10 @@ const albums = [
   ];
 
 
-shopItems.addEventListener('click', function(img) {
+shopItems.addEventListener('click', () => albumAdd(item));
+
+function albumAdd(item) {
+
 
     document.getElementById("cartItems").innerHTML += 
     `<div class = "cartAdd"> 
@@ -35,5 +38,6 @@ shopItems.addEventListener('click', function(img) {
     </div>`
 
     albums[inCart] = true;
-})
+
+}
 
